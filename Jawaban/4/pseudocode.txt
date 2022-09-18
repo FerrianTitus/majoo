@@ -1,0 +1,28 @@
+// Ascending
+DECLARE arr[], lenArr
+INPUT arr[]
+SET lenArr = count(arr[])
+ 	FOR i:=0;i<lenArr-1;i++
+ 		FOR j:=0;j<lenArr-1;j++
+ 			IF arr[j] > arr[j+1]
+ 				SET arr[j], arr[j+1] = arr[j+1], arr[j]
+ 			ENDIF
+ 		ENDFOR
+ 	ENDFOR
+PRINT
+END
+
+
+// Descending
+DECLARE arr[], lenArr
+INPUT arr[]
+SET lenArr = count(arr[])
+	FOR i:=0;i<lenArr-1;i++
+	  FOR j:=0;j<lenArr-1;j++
+  		IF arr[j] < arr[j+1]
+ 				SET arr[j], arr[j+1] = arr[j+1], arr[j]
+ 			ENDIF
+ 		ENDFOR
+ 	ENDFOR
+PRINT
+END
